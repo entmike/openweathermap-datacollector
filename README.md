@@ -47,8 +47,8 @@ Environment Variables:
 |`PGUSER`|PostgreSQL User|Empty|
 |`PGPASSWORD`|PostgreSQL Password|Empty|
 |`INTERVAL`|OpenWeatherMap Refresh Interval (seconds)|`300`|
-|`LATITUDE`|Latitude of where you want forecast|`40.70098574912939`|
-|`LONGITUDE`|Longitude of where you want forecast|`-73.9837906003035`|
+|`LATITUDE`|Latitude of where you want temperature|`40.70098574912939`|
+|`LONGITUDE`|Longitude of where you want temperature|`-73.9837906003035`|
 |`APIKEY`|Your OpenWeatherMap API Key|Empty|
 
 In `psql` or whatever PostgreSQL client you use, connect to the database and look at the `temp` table for updates.
