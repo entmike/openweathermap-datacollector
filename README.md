@@ -51,4 +51,4 @@ Environment Variables:
 |`LONGITUDE`|Longitude of where you want forecast|`-73.9837906003035`|
 |`APIKEY`|Your OpenWeatherMap API Key|Empty|
 
-In `psql` or whatever PostgreSQL client you use, connect to the database and look at the `forecast` table for updates.
+In `psql` or whatever PostgreSQL client you use, connect to the database and look at the `temp` table for updates.
