@@ -28,7 +28,7 @@ if (APIKEY === undefined) {
         const client = new Client()
         client.connect().then(() => {
           const query = `
-            INSERT INTO temp (temp, feels_like, temp_min, temp_max, pressure, humidity, latitude, longitude, units)
+            INSERT INTO temps (temp, feels_like, temp_min, temp_max, pressure, humidity, latitude, longitude, units)
             VALUES (${data.temp},${data.feels_like},${data.temp_min},${data.temp_max},
             ${data.pressure},${data.humidity},${LATITUDE},${LONGITUDE},'imperial')`
           // Execute INSERT command

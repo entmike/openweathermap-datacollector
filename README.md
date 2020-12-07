@@ -15,9 +15,9 @@ If you don't care about local development and just want to run it, see the examp
 1. Docker Installed
 2. PostgreSQL Installed somewhere (physical host, VM, Docker, whatever) with a new DB created (i.e. `hubitat`)
 3. OpenWeatherMap [API Key](https://openweathermap.org/api)
-3. `temp` table created in PostgreSQL DB.  Create statement for your convenience:
+3. `temps` table created in PostgreSQL DB.  Create statement for your convenience:
 ```sql
-CREATE TABLE temp (
+CREATE TABLE temps (
     temp double precision,
     feels_like double precision,
     temp_min double precision,
@@ -51,4 +51,4 @@ Environment Variables:
 |`LONGITUDE`|Longitude of where you want temperature|`-73.9837906003035`|
 |`APIKEY`|Your OpenWeatherMap API Key|Empty|
 
-In `psql` or whatever PostgreSQL client you use, connect to the database and look at the `temp` table for updates.
+In `psql` or whatever PostgreSQL client you use, connect to the database and look at the `temps` table for updates.
