@@ -35,7 +35,7 @@ CREATE TABLE temp (
 ```
 docker run --rm -ti \
   -e PGHOST=yourpostgreshost -e PGPORT=5432 -e PGDATABASE=hubitat -e PGUSER=postgres -e PGPASSWORD=YourPassword \
-  -e INTERVAL=300 -e LONGITUDE=-73.9837906003035 entmike/openweathermap-datacollector
+  -e INTERVAL=300 -e LONGITUDE=-73.9837906003035 -e APIKEY=youropenweathermapapikey entmike/openweathermap-datacollector
 ```
 
 Environment Variables:
