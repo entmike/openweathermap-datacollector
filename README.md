@@ -18,16 +18,32 @@ If you don't care about local development and just want to run it, see the examp
 3. `temps` table created in PostgreSQL DB.  Create statement for your convenience:
 ```sql
 CREATE TABLE temps (
-    temp double precision,
-    feels_like double precision,
-    temp_min double precision,
-    temp_max double precision,
-    pressure double precision,
-    humidity double precision,
     timestamp timestamp without time zone DEFAULT now(),
     units character varying(25),
     latitude double precision,
-    longitude double precision
+    longitude double precision,
+    visibility double precision,
+    name character varying(255),
+    main_temp double precision,
+    main_feels_like double precision,
+    main_temp_min double precision,
+    main_temp_max double precision,
+    main_pressure double precision,
+    main_humidity double precision,
+    main_sea_level double precision,
+    main_grnd_level double precision,
+    wind_speed double precision,
+    wind_deg double precision,
+    wind_gust double precision,
+    clouds_all double precision,
+    rain_1h double precision,
+    rain_3h double precision,
+    snow_1h double precision,
+    snow_3h double precision,
+    weather_id integer,
+    weather_main character varying(1024),
+    weather_description character varying(1024),
+    weather_icon character varying(32)
 );
 ```
 
